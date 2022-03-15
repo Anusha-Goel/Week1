@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Task 2</title>
+        <script>    
+        document.write(" Task-2 Banking system ");
+        function bank(){
+            this.bal=0;
+            this.openAccount = function(openbalance){
+                this.bal=openbalance;
+                document.write("Account opened. Current balance is " , openbalance);
+            }
+            document.write("<br />");
+            document.write("<br />");
+            this.withdraw = function(withdrawAmt){
+                if(withdrawAmt>this.bal)
+                {document.write("Not enough balance in the account");
+            }
+                else
+                {   
+                    this.bal = this.bal - withdrawAmt; 
+                    document.write("Withdraw successfull. Current balance is  " , this.bal);  
+                 }
+            }
+            
+            this.deposit = function(DepositAmt){
+                this.bal=this.bal + DepositAmt;
+                document.write("Amount deposited " , DepositAmt);
+                document.write("<br />");
+                document.write("Current balance is ", this.bal);
+            }
+        }
+
+        var obj = new bank();
+        obj.openAccount(55000);
+        document.write("<br />");
+        obj.withdraw(5000);
+        document.write("<br />");
+        obj.deposit(1000);
+        document.write("<br />");
+        
+        </script>
+    </head>
+</html>
