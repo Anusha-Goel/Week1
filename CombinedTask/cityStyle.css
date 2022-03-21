@@ -1,0 +1,14 @@
+.card{
+    text-align:justify;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h6{
+    font-style:italic ;
+}
+body{
+    background-image: url("bgform.jpg");
+    background-position: center;
+    background-size: cover;
+    font-family: sans-serif;
+}
